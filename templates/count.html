@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>result</title>
+</head>
+<body>
+<h1>统计结果,文本字数为{{ total_count }}</h1>
+<h2>你输入的内容为：</h2>
+{{ text }}
+<br>
+<h2>出现频率</h2>
+
+{% for word,count in word_dict %}
+    {{ word }} : {{ count }}
+    <br>
+{% endfor %}
+{#{{ word_dict }}#}
+</body>
+</html>
